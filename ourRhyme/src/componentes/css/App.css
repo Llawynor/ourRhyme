@@ -1,0 +1,169 @@
+* {
+  transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+}
+
+body {
+  background-color: rgba(83, 13, 112, 0.9);
+}
+
+.hidden {
+  display: none;
+}
+
+.App {
+  text-align: center;
+}
+
+#appHeader {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: fixed;
+  width: 100%;
+}
+
+div#auth {
+  background-color: white !important;
+  width: 70%;
+  border-radius: 30px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 15px black;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.myInputDiv {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.labelMyInput {
+  color: black;
+  margin-right: 5px;
+  font-size: 1.1em;
+}
+
+.myInput {
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 4px;
+  width: 60%;
+  font-size: 1em;
+}
+
+.divMyButton {
+  margin-top: 10px;
+}
+
+.myBtn {
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#btnLogin {
+  margin-top: 5px;
+}
+
+.myBtn:hover {
+  background-color: rgba(83, 13, 112, 0.8);
+  color: white;
+  border: 1px solid white;
+  transform: scale(1.2);
+}
+
+.borderTop {
+  border-top: 2px solid rgba(0, 0, 0, 0.8);
+  margin-top: 15px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+#divCadastrar .borderTop {
+  border-top: 2px solid rgba(0, 0, 0, 0.8);
+  width: 80%;
+}
+
+.showOpcoesAuth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.baseOpsAuth {
+  cursor: pointer;
+  width: 70%;
+}
+
+.baseOpsAuth:hover {
+  transform: scale(1.1);
+}
+
+#showViewCadastrar, #showViewLogin, #divEsqueciMinhaSenha {
+  text-align: center;
+  border: 1px solid black;
+  margin-top: 10px;
+  padding: 10px 10px;
+  background-color: rgba(83, 13, 112, 0.8);
+  color: white;
+  border-radius: 4px;
+}
+
+#showViewCadastrar > p, #showViewLogin > p, #divEsqueciMinhaSenha > p {
+  margin: 0;
+  width: 100%;
+}
+
+#showViewLogin, #divEsqueciMinhaSenha {
+  margin-bottom: 15px;
+}
+
+#appTitle {
+  color: rgb(102, 16, 139);
+  font-size: 2.5em;
+}
+
+#appFooter {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  bottom: 0;
+}
+
+@media screen and (max-width: 450px) {
+  #appTitle {
+    font-size: 2em;
+  }
+
+  .myInputDiv {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .labelMyInput {
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+  }
+  
+  .myInput {
+    width: 70%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 5px;
+  }
+}
